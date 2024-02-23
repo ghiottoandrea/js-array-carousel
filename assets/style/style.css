@@ -1,0 +1,28 @@
+.container {
+    width: 80%;
+    margin: auto;
+    max-width: 800px;
+
+
+    .slides{
+        > img {
+            max-width: 100%;
+
+        }
+
+        > img:not(.active){
+            display: none;
+        }
+    }
+
+    .controlls{
+        display: flex;
+        justify-content: space-between;
+
+        .up, .down{
+            padding: 1rem;
+            border-radius: 50%;
+            border: 1px solid lightgray;
+        }
+    }
+}
